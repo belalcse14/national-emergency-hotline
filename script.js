@@ -21,12 +21,13 @@ document.getElementById("call-button").addEventListener("click", function () {
   coinCountDisplay.innerText = coinCount;
 });
 
-// ============================== Copy to Clipboard Added ==============================
+// ============================== Copy to Clipboard Added for Card #1 ==============================
 const copyDisplay = document.getElementById("copy");
 let copyCount = 0;
-
+const hotlineNumber = document.getElementById("hotline-number");
 document.getElementById("copy-button").addEventListener("click", function () {
   alert("Copied!");
   copyCount++;
   copyDisplay.innerText = copyCount;
+  navigator.clipboard.writeText(hotlineNumber.innerText);
 });
