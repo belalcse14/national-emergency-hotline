@@ -40,7 +40,10 @@
         <div
           class="flex items-center max-md:flex-col max-md:gap-2 max-md:items-center"
         >
-          <div class="flex mr-4 gap-2 bg-[#ECFFF0] px-5 py-2 rounded-3xl">
+          <div
+            id="heart"
+            class="flex mr-4 gap-2 bg-[#ECFFF0] px-5 py-2 rounded-3xl"
+          >
             <p class="font-bold">0</p>
             <img class="h-[24px] w-[24px ]" src="./assets/heart.png" alt="" />
           </div>
@@ -73,10 +76,12 @@
     <!-- =============== Main Section ================== -->
     <section class="bg-[#F5FFF6]">
       <div
-        class="max-w-[1320px] pt-5 mx-auto flex justify-between max-md:flex-col"
+        class="max-w-[1320px] pt-5 mx-auto flex justify-between max-md:flex-col max-md:p-3"
       >
         <!-- Left Div ============ Card Design ========= -->
-        <div class="grid grid-cols-3 gap-6 mb-4">
+        <div
+          class="grid grid-cols-3 gap-6 mb-4 max-md:grid-cols-1 max-md:justify-items-center max-md:p-4"
+        >
           <!-- ======================Card Start================= -->
           <div
             class="w-[280px] h-[240px] bg-white p-3 rounded-lg shadow-lg border-1 border-[#ebebeb]"
@@ -87,7 +92,9 @@
               >
                 <img class="h-6 w-6" src="./assets/emergency.png" alt="" />
               </div>
-              <p><i class="fa-regular fa-heart cursor-pointer"></i></p>
+              <p id="heart-icon">
+                <i class="fa-regular fa-heart cursor-pointer"></i>
+              </p>
             </div>
             <h1 class="font-bold text-[16px] mt-2">
               National Emergency Number
@@ -120,19 +127,15 @@
               <div
                 class="bg-red-100 w-[45px] h-[45px] rounded-xl flex justify-center items-center"
               >
-                <img class="h-6 w-6" src="./assets/emergency.png" alt="" />
+                <img class="h-6 w-6" src="./assets/police.png" alt="" />
               </div>
               <p><i class="fa-regular fa-heart cursor-pointer"></i></p>
             </div>
-            <h1 class="font-bold text-[16px] mt-2">
-              National Emergency Number
-            </h1>
-            <p class="font-light">National Emergency</p>
+            <h1 class="font-bold text-[16px] mt-2">Police Helpline Number</h1>
+            <p class="font-light">Police</p>
             <h1 class="mt-3 text-[24px] font-bold">999</h1>
-            <div
-              class="bg-red-50 w-[30px] h-[30px] rounded-xl flex justify-center items-center mb-2"
-            >
-              <p class="font-light">All</p>
+            <div class="rounded-xl flex mb-2">
+              <p class="font-light bg-red-50 p-1 rounded-xl">Police</p>
             </div>
             <div class="flex justify-between">
               <button
@@ -291,7 +294,7 @@
 
         <!-- ======= Right Div  ====== History === -->
         <div
-          class="w-[390px] bg-white rounded-lg border-1 border-[#ebebeb] mb-4"
+          class="w-[390px] bg-white rounded-lg border-1 border-[#ebebeb] mb-4 max-md:w-[100%]"
         >
           <div class="p-4 flex justify-between items-center">
             <p><i class="fa-regular fa-alarm-clock"></i> Call History</p>
@@ -314,5 +317,8 @@
         </div>
       </div>
     </section>
+
+    <!-- ================== JavaScript Linked ================= -->
+    <script src="script.js"></script>
   </body>
 </html>
