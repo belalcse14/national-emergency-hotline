@@ -10,10 +10,10 @@
 
 ### ANSWER 1:
 
-*getElementById(): Selects a single element based on its unique *id* attribute.
-*getElementsByClassName() : Selects all elements that have a specific class name.
-*querySelector(): Selects the first element that matches CSS selector such as .className.
-*querySelectorAll(): Selects all elements that match a CSS selector.
+- getElementById(): Selects a single element based on its unique _id_ attribute.
+- getElementsByClassName() : Selects all elements that have a specific class name.
+- querySelector(): Selects the first element that matches CSS selector such as .className.
+- querySelectorAll(): Selects all elements that match a CSS selector.
 
 ### ANSWER 2:
 
