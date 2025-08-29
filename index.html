@@ -81,7 +81,7 @@
         >
           <!-- ======================Card Start================= -->
           <div
-            class="w-[280px] h-[240px] bg-white p-3 rounded-lg shadow-lg border-1 border-[#ebebeb]"
+            class="card-container w-[280px] h-[240px] bg-white p-3 rounded-lg shadow-lg border-1 border-[#ebebeb]"
           >
             <div class="flex justify-between items-center">
               <div
@@ -89,15 +89,15 @@
               >
                 <img class="h-6 w-6" src="./assets/emergency.png" alt="" />
               </div>
-              <p id="heart-icon">
+              <p class="heart-icon">
                 <i class="fa-regular fa-heart cursor-pointer"></i>
               </p>
             </div>
-            <h1 id="service-name" class="font-bold text-[16px] mt-2">
+            <h1 class="service-name font-bold text-[16px] mt-2">
               National Emergency Number
             </h1>
             <p class="font-light">National Emergency</p>
-            <h1 id="hotline-number" class="mt-3 text-[24px] font-bold">999</h1>
+            <h1 class="service-number mt-3 text-[24px] font-bold">999</h1>
             <div
               class="bg-red-50 w-[30px] h-[30px] rounded-xl flex justify-center items-center mb-2"
             >
@@ -105,14 +105,12 @@
             </div>
             <div class="flex justify-between">
               <button
-                id="copy-button"
-                class="mr-4 border-2 border-[#D4D6D5] text-[#6b6b6b] rounded-lg px-[30px] hover:border-[#858585] cursor-pointer"
+                class="copy-button mr-4 border-2 border-[#D4D6D5] text-[#6b6b6b] rounded-lg px-[30px] hover:border-[#858585] cursor-pointer"
               >
                 <i class="fa-solid fa-copy text-[#D4D6D5]"></i> Copy
               </button>
               <button
-                id="call-button"
-                class="px-[30px] rounded-lg bg-[#00A63E] text-white hover:bg-[#6b6b6b] cursor-pointer"
+                class="call-button px-[30px] rounded-lg bg-[#00A63E] text-white hover:bg-[#6b6b6b] cursor-pointer"
               >
                 <i class="fa-solid fa-phone text-white"></i> Call
               </button>
@@ -120,7 +118,7 @@
           </div>
           <!-- =================== Another Card ===================== -->
           <div
-            class="w-[280px] h-[240px] bg-white p-3 rounded-lg shadow-lg border-1 border-[#ebebeb]"
+            class="card-container w-[280px] h-[240px] bg-white p-3 rounded-lg shadow-lg border-1 border-[#ebebeb]"
           >
             <div class="flex justify-between items-center">
               <div
@@ -128,22 +126,26 @@
               >
                 <img class="h-6 w-6" src="./assets/police.png" alt="" />
               </div>
-              <p><i class="fa-regular fa-heart cursor-pointer"></i></p>
+              <p class="heart-icon">
+                <i class="fa-regular fa-heart cursor-pointer"></i>
+              </p>
             </div>
-            <h1 class="font-bold text-[16px] mt-2">Police Helpline Number</h1>
+            <h1 class="service-name font-bold text-[16px] mt-2">
+              Police Helpline Number
+            </h1>
             <p class="font-light">Police</p>
-            <h1 class="mt-3 text-[24px] font-bold">999</h1>
+            <h1 class="service-number mt-3 text-[24px] font-bold">999</h1>
             <div class="rounded-xl flex mb-2">
               <p class="font-light bg-red-50 p-1 rounded-xl">Police</p>
             </div>
             <div class="flex justify-between">
               <button
-                class="mr-4 border-2 border-[#D4D6D5] text-[#6b6b6b] rounded-lg px-[30px] hover:border-[#858585] cursor-pointer"
+                class="copy-button mr-4 border-2 border-[#D4D6D5] text-[#6b6b6b] rounded-lg px-[30px] hover:border-[#858585] cursor-pointer"
               >
                 <i class="fa-solid fa-copy text-[#D4D6D5]"></i> Copy
               </button>
               <button
-                class="px-[30px] rounded-lg bg-[#00A63E] text-white hover:bg-[#6b6b6b] cursor-pointer"
+                class="call-button px-[30px] rounded-lg bg-[#00A63E] text-white hover:bg-[#6b6b6b] cursor-pointer"
               >
                 <i class="fa-solid fa-phone text-white"></i> Call
               </button>
@@ -151,7 +153,7 @@
           </div>
           <!-- =================== Another Card ===================== -->
           <div
-            class="w-[280px] h-[240px] bg-white p-3 rounded-lg shadow-lg border-1 border-[#ebebeb]"
+            class="card-container w-[280px] h-[240px] bg-white p-3 rounded-lg shadow-lg border-1 border-[#ebebeb]"
           >
             <div class="flex justify-between items-center">
               <div
@@ -159,13 +161,15 @@
               >
                 <img class="h-6 w-6" src="./assets/emergency.png" alt="" />
               </div>
-              <p><i class="fa-regular fa-heart cursor-pointer"></i></p>
+              <p class="heart-icon">
+                <i class="fa-regular fa-heart cursor-pointer"></i>
+              </p>
             </div>
-            <h1 class="font-bold text-[16px] mt-2">
+            <h1 class="service-name font-bold text-[16px] mt-2">
               National Emergency Number
             </h1>
             <p class="font-light">National Emergency</p>
-            <h1 class="mt-3 text-[24px] font-bold">999</h1>
+            <h1 class="service-number mt-3 text-[24px] font-bold">999</h1>
             <div
               class="bg-red-50 w-[30px] h-[30px] rounded-xl flex justify-center items-center mb-2"
             >
@@ -173,12 +177,12 @@
             </div>
             <div class="flex justify-between">
               <button
-                class="mr-4 border-2 border-[#D4D6D5] text-[#6b6b6b] rounded-lg px-[30px] hover:border-[#858585] cursor-pointer"
+                class="copy-button mr-4 border-2 border-[#D4D6D5] text-[#6b6b6b] rounded-lg px-[30px] hover:border-[#858585] cursor-pointer"
               >
                 <i class="fa-solid fa-copy text-[#D4D6D5]"></i> Copy
               </button>
               <button
-                class="px-[30px] rounded-lg bg-[#00A63E] text-white hover:bg-[#6b6b6b] cursor-pointer"
+                class="call-button px-[30px] rounded-lg bg-[#00A63E] text-white hover:bg-[#6b6b6b] cursor-pointer"
               >
                 <i class="fa-solid fa-phone text-white"></i> Call
               </button>
@@ -186,7 +190,7 @@
           </div>
           <!-- =================== Another Card ===================== -->
           <div
-            class="w-[280px] h-[240px] bg-white p-3 rounded-lg shadow-lg border-1 border-[#ebebeb]"
+            class="card-container w-[280px] h-[240px] bg-white p-3 rounded-lg shadow-lg border-1 border-[#ebebeb]"
           >
             <div class="flex justify-between items-center">
               <div
@@ -194,13 +198,15 @@
               >
                 <img class="h-6 w-6" src="./assets/emergency.png" alt="" />
               </div>
-              <p><i class="fa-regular fa-heart cursor-pointer"></i></p>
+              <p class="heart-icon">
+                <i class="fa-regular fa-heart cursor-pointer"></i>
+              </p>
             </div>
-            <h1 class="font-bold text-[16px] mt-2">
+            <h1 class="service-name font-bold text-[16px] mt-2">
               National Emergency Number
             </h1>
             <p class="font-light">National Emergency</p>
-            <h1 class="mt-3 text-[24px] font-bold">999</h1>
+            <h1 class="service-number mt-3 text-[24px] font-bold">999</h1>
             <div
               class="bg-red-50 w-[30px] h-[30px] rounded-xl flex justify-center items-center mb-2"
             >
@@ -208,12 +214,12 @@
             </div>
             <div class="flex justify-between">
               <button
-                class="mr-4 border-2 border-[#D4D6D5] text-[#6b6b6b] rounded-lg px-[30px] hover:border-[#858585] cursor-pointer"
+                class="copy-button mr-4 border-2 border-[#D4D6D5] text-[#6b6b6b] rounded-lg px-[30px] hover:border-[#858585] cursor-pointer"
               >
                 <i class="fa-solid fa-copy text-[#D4D6D5]"></i> Copy
               </button>
               <button
-                class="px-[30px] rounded-lg bg-[#00A63E] text-white hover:bg-[#6b6b6b] cursor-pointer"
+                class="call-button px-[30px] rounded-lg bg-[#00A63E] text-white hover:bg-[#6b6b6b] cursor-pointer"
               >
                 <i class="fa-solid fa-phone text-white"></i> Call
               </button>
@@ -221,7 +227,7 @@
           </div>
           <!-- =================== Another Card ===================== -->
           <div
-            class="w-[280px] h-[240px] bg-white p-3 rounded-lg shadow-lg border-1 border-[#ebebeb]"
+            class="card-container w-[280px] h-[240px] bg-white p-3 rounded-lg shadow-lg border-1 border-[#ebebeb]"
           >
             <div class="flex justify-between items-center">
               <div
@@ -229,13 +235,15 @@
               >
                 <img class="h-6 w-6" src="./assets/emergency.png" alt="" />
               </div>
-              <p><i class="fa-regular fa-heart cursor-pointer"></i></p>
+              <p class="heart-icon">
+                <i class="fa-regular fa-heart cursor-pointer"></i>
+              </p>
             </div>
-            <h1 class="font-bold text-[16px] mt-2">
+            <h1 class="service-name font-bold text-[16px] mt-2">
               National Emergency Number
             </h1>
             <p class="font-light">National Emergency</p>
-            <h1 class="mt-3 text-[24px] font-bold">999</h1>
+            <h1 class="service-number mt-3 text-[24px] font-bold">999</h1>
             <div
               class="bg-red-50 w-[30px] h-[30px] rounded-xl flex justify-center items-center mb-2"
             >
@@ -243,12 +251,12 @@
             </div>
             <div class="flex justify-between">
               <button
-                class="mr-4 border-2 border-[#D4D6D5] text-[#6b6b6b] rounded-lg px-[30px] hover:border-[#858585] cursor-pointer"
+                class="copy-button mr-4 border-2 border-[#D4D6D5] text-[#6b6b6b] rounded-lg px-[30px] hover:border-[#858585] cursor-pointer"
               >
                 <i class="fa-solid fa-copy text-[#D4D6D5]"></i> Copy
               </button>
               <button
-                class="px-[30px] rounded-lg bg-[#00A63E] text-white hover:bg-[#6b6b6b] cursor-pointer"
+                class="call-button px-[30px] rounded-lg bg-[#00A63E] text-white hover:bg-[#6b6b6b] cursor-pointer"
               >
                 <i class="fa-solid fa-phone text-white"></i> Call
               </button>
@@ -256,7 +264,7 @@
           </div>
           <!-- =================== Another Card ===================== -->
           <div
-            class="w-[280px] h-[240px] bg-white p-3 rounded-lg shadow-lg border-1 border-[#ebebeb]"
+            class="card-container w-[280px] h-[240px] bg-white p-3 rounded-lg shadow-lg border-1 border-[#ebebeb]"
           >
             <div class="flex justify-between items-center">
               <div
@@ -264,13 +272,15 @@
               >
                 <img class="h-6 w-6" src="./assets/emergency.png" alt="" />
               </div>
-              <p><i class="fa-regular fa-heart cursor-pointer"></i></p>
+              <p class="heart-icon">
+                <i class="fa-regular fa-heart cursor-pointer"></i>
+              </p>
             </div>
-            <h1 class="font-bold text-[16px] mt-2">
+            <h1 class="service-name font-bold text-[16px] mt-2">
               National Emergency Number
             </h1>
             <p class="font-light">National Emergency</p>
-            <h1 class="mt-3 text-[24px] font-bold">999</h1>
+            <h1 class="service-number mt-3 text-[24px] font-bold">999</h1>
             <div
               class="bg-red-50 w-[30px] h-[30px] rounded-xl flex justify-center items-center mb-2"
             >
@@ -278,12 +288,12 @@
             </div>
             <div class="flex justify-between">
               <button
-                class="mr-4 border-2 border-[#D4D6D5] text-[#6b6b6b] rounded-lg px-[30px] hover:border-[#858585] cursor-pointer"
+                class="copy-button mr-4 border-2 border-[#D4D6D5] text-[#6b6b6b] rounded-lg px-[30px] hover:border-[#858585] cursor-pointer"
               >
                 <i class="fa-solid fa-copy text-[#D4D6D5]"></i> Copy
               </button>
               <button
-                class="px-[30px] rounded-lg bg-[#00A63E] text-white hover:bg-[#6b6b6b] cursor-pointer"
+                class="call-button px-[30px] rounded-lg bg-[#00A63E] text-white hover:bg-[#6b6b6b] cursor-pointer"
               >
                 <i class="fa-solid fa-phone text-white"></i> Call
               </button>

@@ -1,42 +1,52 @@
 let historyDataDisplay = [];
-// ==========================  Heart Count Added ==================================
-const heartCountDisplay = document.getElementById("heart");
 let heartCount = 0;
-document.getElementById("heart-icon").addEventListener("click", function () {
-  heartCount++;
-  heartCountDisplay.innerText = heartCount;
-});
-
-// ============================= Coin Count Added & Call Button Functionality ==================================
-const coinCountDisplay = document.getElementById("coin");
-const serviceName = document.getElementById("service-name").innerText;
-const serviceNumber = document.getElementById("hotline-number").innerText;
-const historyContainer = document.getElementById("history-container");
-
 let coinCount = 100;
+let copyCount = 0;
+// ============================================================
+const heartCountDisplay = document.getElementById("heart");
+const coinCountDisplay = document.getElementById("coin");
+const historyContainer = document.getElementById("history-container");
+const copyDisplay = document.getElementById("copy");
 
-document.getElementById("call-button").addEventListener("click", function () {
-  coinCount = coinCount - 20;
-  if (coinCount < 0) {
-    alert("❌ Your Coin is Insufficient!");
-    return;
-  }
-  alert(`📞 Calling.... \n ${serviceName} : ${serviceNumber}`);
+// ==========================  Heart Count Added ==================================
+const heartIcons = document.getElementsByClassName("heart-icon");
+for (let heart of heartIcons) {
+  heart.addEventListener("click", function () {
+    heartCount++;
+    heartCountDisplay.innerText = heartCount;
+  });
+}
 
-  coinCountDisplay.innerText = coinCount;
+// ======================== Coin Count Added & Call Button Functionality ===================
 
-  const historyData = {
-    name: serviceName,
-    number: serviceNumber,
-    date: new Date().toLocaleTimeString(),
-  };
-  historyDataDisplay.push(historyData);
+const callButtons = document.getElementsByClassName("call-button");
+for (let button of callButtons) {
+  button.addEventListener("click", function () {
+    const card = button.closest(".card-container");
+    const serviceName = card.querySelector(".service-name").innerText;
+    const serviceNumber = card.querySelector(".service-number").innerText;
 
-  historyContainer.innerText = "";
+    coinCount = coinCount - 20;
+    if (coinCount < 0) {
+      alert("❌ Your Coin is Insufficient!");
+      return;
+    }
+    alert(`📞 Calling.... \n ${serviceName} : ${serviceNumber}`);
 
-  for (const data of historyDataDisplay) {
-    const div = document.createElement("div");
-    div.innerHTML = `
+    coinCountDisplay.innerText = coinCount;
+
+    const historyData = {
+      name: serviceName,
+      number: serviceNumber,
+      date: new Date().toLocaleTimeString(),
+    };
+    historyDataDisplay.push(historyData);
+
+    historyContainer.innerText = "";
+
+    for (const data of historyDataDisplay) {
+      const div = document.createElement("div");
+      div.innerHTML = `
               <div
             class="bg-[#FAFAFA] mx-4 rounded-lg p-4 flex justify-between items-center mb-4"
           >
@@ -47,20 +57,25 @@ document.getElementById("call-button").addEventListener("click", function () {
             <p>${data.date}</p>
           </div>
     `;
-    historyContainer.appendChild(div);
-  }
-});
+      historyContainer.appendChild(div);
+    }
+  });
+}
 
-// ============================== Copy to Clipboard Added for Card #1 ==============================
-const copyDisplay = document.getElementById("copy");
-let copyCount = 0;
-const hotlineNumber = document.getElementById("hotline-number");
-document.getElementById("copy-button").addEventListener("click", function () {
-  alert("Copied!");
-  copyCount++;
-  copyDisplay.innerText = copyCount;
-  navigator.clipboard.writeText(hotlineNumber.innerText);
-});
+// ============================== Copy to Clipboard Added ==============================
+
+const copyButtons = document.getElementsByClassName("copy-button");
+for (let button of copyButtons) {
+  button.addEventListener("click", function () {
+    alert("Copied!");
+    const card = button.closest(".card-container");
+    const serviceNumber = card.querySelector(".service-number").innerText;
+    copyCount++;
+    copyDisplay.innerText = copyCount;
+    navigator.clipboard.writeText(serviceNumber);
+  });
+}
+document.getElementById("copy-button");
 
 // ================================= History Section Added =====================================
 document.getElementById("clear-button").addEventListener("click", function () {
