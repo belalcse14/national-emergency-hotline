@@ -26,7 +26,7 @@ This means that if a user clicks a button inside a div, the click event will fir
 
 ### ANSWER 4:
 
-Event delegation in JavaScript is an efficient pattern for handling events. When an event occurs on a child element, it 'bubbles up' to the parent, triggering the listener.
+Event delegation in JavaScript is an efficient pattern for handling events. When an event occurs on a child element, it 'bubbles up' to the parent, triggering the listener. This is useful because it reduces memory usage by minimizing the number of event listeners, simplifies code, and dynamically handles events for elements added after the initial page load.
 
 ### ANSWER 5:
 
