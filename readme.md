@@ -17,8 +17,8 @@
 
 ### ANSWER 2:
 
-Creating the Element: document.createElement()
-Inserting new Element: appendChild().
+- Creating the Element: document.createElement()
+- Inserting new Element: appendChild().
 
 ### ANSWER 3:
 
@@ -30,5 +30,5 @@ Event delegation in JavaScript is an efficient pattern for handling events. When
 
 ### ANSWER 5:
 
-The preventDefault() method stops the default action.
-The stopPropagation() method, on the other hand, prevents an event from bubbling up.
+- The preventDefault() method stops the default action.
+- The stopPropagation() method, on the other hand, prevents an event from bubbling up.
