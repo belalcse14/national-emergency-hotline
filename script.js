@@ -6,8 +6,10 @@ document.getElementById("heart-icon").addEventListener("click", function () {
   heartCountDisplay.innerText = heartCount;
 });
 
-// ============================= Coin Count Added ==================================
+// ============================= Coin Count Added & Call Button Functionality ==================================
 const coinCountDisplay = document.getElementById("coin");
+const serviceName = document.getElementById("service-name").innerText;
+const serviceNumber = document.getElementById("hotline-number").innerText;
 let coinCount = 100;
 
 document.getElementById("call-button").addEventListener("click", function () {
@@ -16,7 +18,7 @@ document.getElementById("call-button").addEventListener("click", function () {
     alert("Your Coin is Insufficient!");
     return;
   }
-  alert("Do You Want to Call?");
+  alert(`📞 Calling.... \n ${serviceName} : ${serviceNumber}`);
 
   coinCountDisplay.innerText = coinCount;
 });
@@ -31,3 +33,5 @@ document.getElementById("copy-button").addEventListener("click", function () {
   copyDisplay.innerText = copyCount;
   navigator.clipboard.writeText(hotlineNumber.innerText);
 });
+
+// ================================= History Section Added =====================================
