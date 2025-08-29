@@ -6,7 +6,7 @@
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
-## ======================== Answer to the Question =======================
+## ===== Answer to the Question =====
 
 ### ANSWER 1:
 

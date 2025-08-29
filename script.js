@@ -8,7 +8,7 @@ const coinCountDisplay = document.getElementById("coin");
 const historyContainer = document.getElementById("history-container");
 const copyDisplay = document.getElementById("copy");
 
-// ==========================  Heart Count Added ==================================
+// ==========================  Heart Count Added =================
 const heartIcons = document.getElementsByClassName("heart-icon");
 for (let heart of heartIcons) {
   heart.addEventListener("click", function () {
@@ -17,7 +17,7 @@ for (let heart of heartIcons) {
   });
 }
 
-// ======================== Coin Count Added & Call Button Functionality ===================
+// ================= Coin Count Added & Call Button Functionality ===========
 
 const callButtons = document.getElementsByClassName("call-button");
 for (let button of callButtons) {
